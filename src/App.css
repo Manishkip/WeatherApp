@@ -1,12 +1,29 @@
-/* body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  background-color: #e0e7ff;
-  color: #1a202c;
+body {
   margin: 0;
-  padding: 0;
-  line-height: 1.6;
-} */
+  font-family: 'Arial', sans-serif;
+  background-color: #e0f7fa;
 
+  background-image: url('https://2.bp.blogspot.com/-1zFexMJMseY/UkPwkpio9zI/AAAAAAAAA70/HLy5bw-L7jg/s1600/full-hd-nature-wallpapers-free-downloads-for-laptop-80.jpg');
+  /* Replace with the URL of your image */
+  background-size: cover;
+  /* Cover the entire screen */
+  background-position: center;
+  /* Center the background image */
+  background-attachment: fixed;
+  /*
+  
+  color: #1a202c;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* Align items from the top */
+  height: 100vh;
+  padding: 0 20px;
+  /* Add some padding for mobile responsiveness */
+  box-sizing: border-box;
+}
+
+/* 
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
@@ -18,7 +35,28 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+} */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* padding: 10px 20px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+main {
+  margin-top: 80px;
+  /* Ensure content starts below the fixed header */
+  padding: 20px;
+}
+
 
 h1 {
   text-align: center;
@@ -28,7 +66,23 @@ h1 {
   margin: 20px 0;
 }
 
-form {
+footer {
+  background-color: #2b6cb0;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,16 +90,25 @@ form {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Subtle shadow */
   min-width: 420px;
   /* max-width: 400px; */
-  margin: 20px auto;
+/*margin: 20px auto;
+  margin-top:120px;
+} */
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 420px;
+  background-color: #ffffff;
 }
 
 input,
 button {
   padding: 12px 15px;
   margin: 8px 0;
+  margin-right: 10px;
   border-radius: 5px;
   border: 1px solid #cbd5e0;
   font-size: 1rem;

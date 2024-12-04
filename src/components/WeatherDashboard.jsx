@@ -80,11 +80,14 @@ const WeatherDashboard = () => {
 
   return (
     <div>
-      <h1>Weather Dashboard</h1>
-      <button onClick={toggleUnit}>
-        Switch to °{unit === 'C' ? 'F' : 'C'}
-      </button>
-      <CitySearch onSearch={fetchWeather} />
+      <header>
+        <h1>Weather Dashboard</h1>
+        <CitySearch onSearch={fetchWeather} />
+        <button onClick={toggleUnit} style={{ marginRight: '30px' }}>
+          Switch to °{unit === 'C' ? 'F' : 'C'}
+        </button>
+      </header>
+      {/* <CitySearch onSearch={fetchWeather} /> */}
       <WeatherDisplay
         weather={currentWeather}
         forecast={forecast}
@@ -92,7 +95,17 @@ const WeatherDashboard = () => {
         addFavorite={addFavorite}
         favorites={favorites} // Pass the favorites list to WeatherDisplay
       />
-      <FavoritesList favorites={favorites} fetchWeather={fetchWeather} fetchFavorites={fetchFavorites} />
+
+      {/* Conditionally render the FavoritesList only if favorites array has items */}
+      {favorites.length > 0 && (
+        <FavoritesList favorites={favorites} fetchWeather={fetchWeather} fetchFavorites={fetchFavorites} />
+      )}
+
+      {/* <FavoritesList favorites={favorites} fetchWeather={fetchWeather} fetchFavorites={fetchFavorites} /> */}
+
+      <footer>
+        <p>&copy; 2024 Weather Dashboard. All rights reserved.</p>
+      </footer>
     </div>
   );
 };
