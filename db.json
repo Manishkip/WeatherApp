@@ -1,24 +1,3 @@
 {
-  "favorites": [
-    {
-      "id": "9d91",
-      "name": "Agra"
-    },
-    {
-      "id": "073f",
-      "name": "New Delhi"
-    },
-    {
-      "id": "695b",
-      "name": "Neemrana"
-    },
-    {
-      "id": "249e",
-      "name": "Jaipur"
-    },
-    {
-      "id": "41bc",
-      "name": "Noida"
-    }
-  ]
+  "favorites": []
 }
