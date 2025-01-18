@@ -1,0 +1,52 @@
+/* src/components/WeatherDisplay.css */
+/* body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #e0f7fa; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+
+/* WeatherDisplay Style */
+.weather_display {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  text-align: center;
+  width: 100%;
+}
+
+.weather_display h2 {
+  color: #00796b;
+  margin-bottom: 10px;
+}
+
+.weather_display p {
+  color: #333;
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.weather_display h3 {
+  color: #004d40;
+  margin-top: 20px;
+}
+
+.weather_display ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.weather_display li {
+  background-color: #f1f8e9;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
